@@ -1,0 +1,46 @@
+{
+  "name": "dvh",
+  "version": "1.0.0",
+  "description": "DVH Histogram",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": []
+  },
+  "engines": {
+    "node": ">=10.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.5",
+    "@babel/preset-env": "7.6.0",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.6.0",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.6",
+    "core-js": "3.2.1",
+    "eslint": "6.4.0",
+    "eslint-config-prettier": "6.3.0",
+    "eslint-loader": "3.0.0",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "2.0.1",
+    "html-webpack-plugin": "4.0.0-beta.8",
+    "prettier": "1.18.2",
+    "regenerator-runtime": "0.13.3",
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.8.1"
+  },
+  "scripts": {
+    "lint": "eslint *.js packages",
+    "dev:api": "node -r esm ./packages/api/src/index.js",
+    "dev:ui": "webpack-dev-server --hot",
+    "build:ui": "NODE_ENV=production webpack"
+  }
+}

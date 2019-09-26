@@ -1,0 +1,14 @@
+{
+  "name": "dvh-ui",
+  "version": "1.0.0",
+  "description": "React-based UI for DVH Histogram",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "styled-components": "4.4.0"
+  }
+}
